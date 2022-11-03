@@ -19,8 +19,6 @@ body {
 }
 
 #card {
-    width: 900px;
-    height: 600px;
     border-radius: 5px;
     overflow: hidden;
     box-shadow: 4px 4px 42px -6px rgba(0,0,0,0.66);
@@ -59,7 +57,7 @@ body {
 #bottom-left-section {
     display: inline-block;
     vertical-align: top;
-    width: 50%;
+    width: 100%;
     height: 100%;
     background-color:#F29D52;
     padding: 20px;
@@ -95,7 +93,7 @@ body {
 }
 
 #bottom-right-section {
-    width: 50%;
+    width: 100%;
     height: 100%;
     display: inline-block;
     vertical-align: top;
@@ -130,4 +128,16 @@ button:hover {
     background-color: #ec9090;
     cursor: pointer;
     transform: scale(1.02);
+}
+
+@media (min-width : 950px) {
+    
+    #card {
+        width: 900px;
+        height: 600px;
+    }
+
+    #bottom-left-section, #bottom-right-section {
+        width: 50%;
+    }
 }
